@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+    </h1>
+ 
+    <script>
+        //how to reverse a string using loops
+        var res="";
+        var str="javascript";
+        for(i=str.length-1;i>=0;i--){
+           res+=str[i];
+           document.getElementById("demo1").innerHTML=res;
+        }
+
+        
+        //how to reverse a string using array methods
+        var str1="javascript";
+        var str1a=str1.split("").reverse().join("")
+        document.getElementById("demo2").innerHTML=str1a;
+        
+
+        //how to capitalize the start letter of substrings
+        var str2="frontend deals with user interface";
+        var str2a=str2.split(" ").map(item=>item.substring(0,1).toUpperCase()+item.substring(1)).join(" ")
+        console.log(str2a);
+
+
+
+    </script>
+</body>
+</html>

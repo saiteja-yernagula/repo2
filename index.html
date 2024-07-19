@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    
+    
+
+
+    <script>
+     
+        //how to display table
+        // var a=prompt();
+        // var table=" ";
+        // for(i=1;i<11;i++){
+        // table+=`${a} * ${i} = ${i*a} <br>`;
+        //     document.getElementById("table").innerHTML=table;
+        // }
+
+        // //how to print string reverse
+        // var str="hello";
+        // var res="";
+        // for(i=str.length-1;i>=0;--i){
+        //     res+=str[i];
+        //    document.getElementById("table").innerHTML=res;
+        // }
+
+        //how to iterate arraay using loops
+    //    var a=["html","css","js"]
+    //    var res="";
+    //    for(i=0;i<a.length;i++){
+    //    res+=a[i];
+    //    document.getElementById("table").innerHTML=res;
+    // }
+
+
+
+
+        //implicit works in js
+        // console.log("2"+2)   //22
+        // console.log("2"-2)   //0
+        // console.log("2"*2)  //4
+        // console.log("2"/2) //0
+        // console.log("2"+true) //3
+        // console.log("2"-"hello") //nan
+
+        // //explicit
+        // number("2")
+        // number(null) //0
+        // number("hello") //nan
+        // parseInt("hello")//nan
+        // parseFloat("20.22")//20.22
+
+        //how to use maps in js
+    //     var a=["html","css","js"];
+    // document.getElementById("table").innerHTML=a.map(item=>{return (item+"<br>")}
+    // );
+
+        // //string method to convert into string
+        // string(324);
+
+
+        // switch(expresion){
+        //     case value: code of block:
+        //         vs
+        // }
+
+    //     //recursion in js ----it is a function that calls itself
+    //    function hello(){
+    //     alert("oyy")
+    //     hello()
+    //    }
+    //    hello();
+
+
+    // //consstructor
+    // function person(name,age){
+    //     this.name=name;
+    //     this.age=age;
+    // }
+    // const person1=new person("teja",23);
+    // const person2=new person("sai",25);
+    // alert(person1.name)  //output teja
+    
+//js built in object constructors
+//let a = new Object();    // A new Object object
+// let b = new String();    // A new String object
+// let c = new Number();    // A new Number object
+// let d = new Boolean();   // A new Boolean object
+    
+
+//prototype takes common for everything in object constructors
+// Person.prototype.gender = 'male';
+
+//js destructuring
+// let { name, age, gender } = person;
+
+//js spread operator
+// let arr2 = [...arr1, 'three', 'four', 'five'];
+
+// //continue and break in loops, continue statement will not execute below program and break statement breaks the loop if the condition is true
+// for (i=1;i<10;i++){
+//     if(i==5) continue;
+//     if(i==7) break;
+// console.log(i)
+// }
+
+
+
+//why spread operator introduced
+    // var a=[12,2,2,22,]  //create an array
+    // var b=a;  //assigned a array to another variable
+    // b[0]=500; //change the second variable value
+    // console.log(a);//500,2,2,22    -here value of array a is also changed because here value is not assigned memory location is assigned in order to oveercome this spread operator was introduced
+    
+    // var a=[12,2,2,22,]  //create an array
+    // var b=[...a];  //create a shallow copy of an array using spread operator
+    // b[0]=500; //change the second variable value
+    // console.log(a);//12,2,2,22    --here value of a is not changed   
+    // console.log(b);//500,2,2,22   --value of b is only changed because spread operator creates a copy of an array
+
+
+    //how to apply uppercase to only first letters of paragraph
+    // var a="javascript is a most popular language"
+    // var b=a.split("").map(item=>item.substring(0,1).toUpperCase()+item.substring(1)).join("")
+    // console.log(b);
+
+
+    //how to fetch data using fetch aysnc function
+    // async function hello(){
+    //     var data=null;
+    //     var res=await fetch('https://dummyjson.com/products/1');
+    //     var data=await res.json();
+    //     console.log(data);
+    //     alert(data.price)
+    // }
+    // hello();
+
+    // var arr=[1,3,3,"car","bike"]
+    // var arr2=["something"]
+    // console.log(arr.length);
+    // console.log(arr.push('hi'));
+    // console.log(arr.concat(arr2)); 
+    // console.log(arr.toString()); //1,3,3,car,bike
+
+    // console.log("Start");
+    // console.log("Middle");
+    // console.log("End");
+    // // start
+    // // middle
+    // // end
+
+    // console.log("Start");
+
+    // setTimeout(()=>{
+    //    console.log("middle")
+    // }),20000;
+
+    // console.log("End");
+
+    // function say(){
+    //     setTimeout(()=>{
+    //    console.log("middle")
+    // }),20000;
+    // }
+    // say();
+
+    // // start
+    // // end
+    // // middle
+
+
+// function myFirst() {
+//   console.log("Hello");
+// }
+
+// function mySecond(a) {
+//   console.log("Goodbye");
+// }
+
+// mySecond(myFirst());//can call two functions at a time
+// mySecond()//one function 
+
+	const numbers = [1, 2, 3, 4, 5];
+	const numbers2 = numbers.every(number => number >3);
+	console.log(numbers2); // Output: false
+
+
+// Element at index 0 is 1
+// Element at index 1 is 2
+// Element at index 2 is 3
+// Element at index 3 is 4
+// Element at index 4 is 5
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
